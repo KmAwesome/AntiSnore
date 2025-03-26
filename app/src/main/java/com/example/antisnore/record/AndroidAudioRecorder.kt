@@ -1,4 +1,4 @@
-package com.example.myapplication.record
+package com.example.antisnore.record
 
 import android.content.Context
 import android.media.MediaPlayer
