@@ -2,6 +2,7 @@ package com.example.antisnore
 
 import android.Manifest
 import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -22,7 +23,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.example.antisnore.playBack.AndroidAudioPlayer
 import com.example.antisnore.record.AndroidAudioRecorder
 import com.example.antisnore.ui.theme.MyApplicationTheme
@@ -44,7 +44,10 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Preview()
+@Preview(
+    showBackground = true,
+    uiMode = Configuration.UI_MODE_NIGHT_MASK
+)
 @Composable
 fun TipTimePreview() {
 
